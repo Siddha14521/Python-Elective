@@ -1,0 +1,21 @@
+def compute_tax(annual_income):
+    if annual_income <= 250000:
+        tax = 0
+    elif annual_income <= 500000:
+        tax = 0.05 * (annual_income - 250000)
+    elif annual_income <= 1000000:
+        tax = 0.2 * (annual_income - 500000) + 12500
+    else:
+        tax = 0.3 * (annual_income - 1000000) + 100000 + 12500
+    return tax
+
+def tax_calculator():
+    print("Welcome to the Tax Calculator!\n")
+    try:
+        annual_income = float(input("Enter your annual income (INR): "))
+        tax_due = compute_tax(annual_income)
+        print(f"\nYour calculated tax amount is: ₹{tax_due:.2f}")
+    except ValueError:
+        print("Invalid input. Please enter a valid numeric value for income.")
+if __name__ == "__main__":
+    tax_calculator()
