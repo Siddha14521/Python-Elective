@@ -1,0 +1,4 @@
+invest = float(input("Enter your investment amount: "))
+return_amnt = float(input("Enter the amount of the return: "))
+return = (return_amnt - invest)/invest
+print("Investment return is", returnn)
