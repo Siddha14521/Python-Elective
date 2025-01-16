@@ -12,4 +12,4 @@ else:
                 result = nextno
                 break
             no = nextno
-    print("The square root is", result)
+    print("The square root is =", result)
