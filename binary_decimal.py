@@ -1,4 +1,4 @@
-binary_no=input("Enter Binary number: ")
+binary_no=input("Enter binary number: ")
 length=len(binary_no)
 dec=0
 for i in range(length):
